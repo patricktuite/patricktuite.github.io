@@ -1,3 +1,2 @@
 # patricktuite.github.io
-
-Creating personal blog with Pelican.
+Personal blog to document learning. 
