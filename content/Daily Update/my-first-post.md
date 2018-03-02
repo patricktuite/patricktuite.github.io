@@ -1,7 +1,7 @@
 Title: First Post!
 Date: 2018-03-02 18:14
-Modified: 2018-03-02 18:14
-Category: misc
+Modified: 2018-03-02 18:44
+Category: Daily Update
 Tags: Pelican, learning, python
 Slug: My-first-post
 Authors: Patrick Tuite
