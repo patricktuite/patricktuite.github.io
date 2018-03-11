@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>March 11th 2018</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Patrick's Blog Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Patrick's Blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/daily-update.html">Daily Update</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/march-eleven.html" rel="bookmark"
+           title="Permalink to March 11th 2018">March 11th 2018</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-03-11T10:27:00-04:00">
+                Published: Sun 11 March 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2018-03-11T10:28:00-04:00">
+                Updated: Sun 11 March 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/patrick-tuite.html">Patrick Tuite</a>
+        </address>
+<p>In <a href="/category/daily-update.html">Daily Update</a>.</p>
+<p>tags: <a href="/tag/daily-update.html">daily update</a> </p>
+</footer><!-- /.post-info -->      <h2>Difference between join method in JavaScript and Python.</h2>
+<p>It always seemed strange to me that Python join was a string method. In other words to join items in a list together you would pass the list into the join method of whatever string you want to join the list items. This always seemed counterintuitive. The opposite seems to be true in JavaScript. You would pass the string you want to join the list items on into a method called on the array. Example below to join a list of words in a single string including a space.</p>
+<h4>JavaScript</h4>
+<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">joinMe</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Split&quot;</span><span class="p">,</span><span class="s2">&quot;me&quot;</span><span class="p">,</span><span class="s2">&quot;into&quot;</span><span class="p">,</span><span class="s2">&quot;an&quot;</span><span class="p">,</span><span class="s2">&quot;array&quot;</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">joinedString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
+
+<span class="nx">joinedString</span> <span class="o">=</span> <span class="nx">joinMe</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">joinedString</span><span class="p">);</span>
+</pre></div>
+
+
+<h4>Python</h4>
+<div class="highlight"><pre><span></span><span class="n">join_me</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Split&quot;</span><span class="p">,</span><span class="s2">&quot;me&quot;</span><span class="p">,</span><span class="s2">&quot;into&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;list&quot;</span><span class="p">]</span>
+<span class="n">joined</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+
+<span class="n">joined</span> <span class="o">=</span> <span class="n">joined</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">join_me</span><span class="p">)</span>
+</pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://www.patricktuite.com">Personal Site</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/patricktuite">Twitter</a></li>
+                            <li><a href="https://github.com/patricktuite">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
