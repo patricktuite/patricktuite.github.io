@@ -21,7 +21,49 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/march-eleven.html">March 11th 2018</a></h1>
+                    <h1 class="entry-title"><a href="/march-fourteen.html">March 14th 2018</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-03-14T21:27:00-04:00">
+                Published: Wed 14 March 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2018-03-14T21:28:00-04:00">
+                Updated: Wed 14 March 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/patrick-tuite.html">Patrick Tuite</a>
+        </address>
+<p>In <a href="/category/daily-update.html">Daily Update</a>.</p>
+<p>tags: <a href="/tag/daily-update.html">daily update</a> </p>
+</footer><!-- /.post-info --><p>Working on more JavaScript exercises. Quick example solution for this problem. This doesn't feel like the most elegant solution, so I will try to streamline it.</p>
+<blockquote>
+<p>Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">mutation</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">test</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nx">toLowerCase</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">mutate</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toLowerCase</span><span class="p">();</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">test</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">mutate</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">test</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">continue</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/march-eleven.html" rel="bookmark"
+                           title="Permalink to March 11th 2018">March 11th 2018</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2018-03-11T10:27:00-04:00">
                 Published: Sun 11 March 2018
@@ -36,27 +78,10 @@
         </address>
 <p>In <a href="/category/daily-update.html">Daily Update</a>.</p>
 <p>tags: <a href="/tag/daily-update.html">daily update</a> </p>
-</footer><!-- /.post-info --><h2>Difference between join method in JavaScript and Python.</h2>
-<p>It always seemed strange to me that Python join was a string method. In other words to join items in a list together you would pass the list into the join method of whatever string you want to join the list items. This always seemed counterintuitive. The opposite seems to be true in JavaScript. You would pass the string you want to join the list items on into a method called on the array. Example below to join a list of words in a single string including a space.</p>
-<h4>JavaScript</h4>
-<div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">joinMe</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Split&quot;</span><span class="p">,</span><span class="s2">&quot;me&quot;</span><span class="p">,</span><span class="s2">&quot;into&quot;</span><span class="p">,</span><span class="s2">&quot;an&quot;</span><span class="p">,</span><span class="s2">&quot;array&quot;</span><span class="p">];</span>
-<span class="kd">var</span> <span class="nx">joinedString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">;</span>
-
-<span class="nx">joinedString</span> <span class="o">=</span> <span class="nx">joinMe</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">joinedString</span><span class="p">);</span>
-</pre></div>
-
-
-<h4>Python</h4>
-<div class="highlight"><pre><span></span><span class="n">join_me</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Split&quot;</span><span class="p">,</span><span class="s2">&quot;me&quot;</span><span class="p">,</span><span class="s2">&quot;into&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;list&quot;</span><span class="p">]</span>
-<span class="n">joined</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
-
-<span class="n">joined</span> <span class="o">=</span> <span class="n">joined</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">join_me</span><span class="p">)</span>
-</pre></div>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+</footer><!-- /.post-info -->                <p>March Eleventh 2018</p>
+                <a class="readmore" href="/march-eleven.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
